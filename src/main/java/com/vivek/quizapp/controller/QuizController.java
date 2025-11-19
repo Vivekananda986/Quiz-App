@@ -18,6 +18,8 @@ public class QuizController {
 
     @Autowired
     QuizService quizService;
+//    add constructor injectiomn
+
 
     @PostMapping("create")
     public ResponseEntity<String> createQuiz(@RequestParam String category, @RequestParam int numQ, @RequestParam String title){
